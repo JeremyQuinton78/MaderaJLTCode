@@ -1,3 +1,3 @@
 # MaderaJLTCode
 
-## [Lien vers le dépôt code](https://github.com/JeremyQuinton78/MaderaJLT)
+## [Lien vers le dépôt maitre](https://github.com/JeremyQuinton78/MaderaJLT)
