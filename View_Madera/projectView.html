@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liste des projets</title>
+	<link rel="stylesheet" href="sheetstyle.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-xlarge bleu-madera">
+			<a href="#" class="w3-bar-item w3-button" onclick="">MADERA</a>
+			<div class="w3-dropdown-hover w3-right">
+				<button class="w3-button">James</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
+					<a href="#" class="w3-bar-item w3-button">Compte</a>
+					<a href="#" class="w3-bar-item w3-button">Déconnexion</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="margin-top: 51px;">
+
+		<div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:15%;">
+			<div class="w3-dropdown-hover">
+				<button class="w3-button w3-dark-grey">Projets</button>
+				<div class="w3-dropdown-content w3-bar-block">
+					<a href="#" class="w3-bar-item w3-button">Liste des projets</a>
+					<a href="#" class="w3-bar-item w3-button">Crée un projet</a>
+				</div>
+			</div>
+			<div class="w3-dropdown-hover">
+				<button class="w3-button w3-dark-grey">Client</button>
+				<div class="w3-dropdown-content w3-bar-block">
+					<a href="#" class="w3-bar-item w3-button">Liste des client</a>
+					<a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-padding over" style="margin-left:15%; overflow: auto;">
+
+            <div class="w3-container w3-card-4 w3-margin w3-light-grey">
+
+                <div class="w3-row">
+                    <h3 class="w3-col s2">$nom du projet</h3>
+                    <p class="w3-col s2 w3-opacity">ref : $reference</p>
+                    <p class="w3-twothird w3-right-align">Projet démarré le : $date</p>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <p>Client : $client</p>
+                        <p>Tel : $tel</p>
+                        <p>Email : $email</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Ville : $ville</p>
+                        <p>CP : $cp</p>
+                        <p>Adresse : $adresse</p>
+                    </div>
+                </div>
+
+
+                <hr class="w3-border-dark-grey">
+
+
+                <div class="w3-row">
+                    <h3 class="w3-half">Produits :</h3>
+                    <div class="w3-half w3-right-align">
+                        <button class="w3-button bleu-madera">Ajouter un produit</button>
+                    </div>
+                </div>
+
+                <button onclick="Accordion('produit1')" class="w3-btn w3-block w3-gray">
+                    Premium / ZENTRAL
+                </button>
+                <div id="produit1" class="w3-hide w3-padding w3-border w3-border-gray">
+                    <p>Type de remplissage</p>
+                    <p>Finition extérieur</p>
+                    <p>Finition intérieur</p>
+                </div>
+                <button onclick="Accordion('produit2')" class="w3-btn w3-block w3-gray">
+                    Economique / SUBRT
+                </button>
+                <div id="produit2" class="w3-hide w3-padding w3-border w3-border-gray">
+                    <p>Type d'économie</p>
+                    <p>Economie extérieur</p>
+                    <p>Economie intérieur</p>
+                </div>
+
+
+                <hr class="w3-border-dark-grey">
+
+
+                <div class="w3-row">
+                    <h3 class="w3-half">Module :</h3>
+                    <div class="w3-half w3-right-align">
+                        <button class="w3-button bleu-madera">Ajouter un module</button>
+                    </div>
+                </div>
+
+            </div>
+
+		</div>
+	</div>
+
+	<script>
+		function Accordion(id) {
+		    var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+	</script>
+
+</body>
+</html>
