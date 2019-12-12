@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Liste des projets</title>
+    <title>$nom du projet</title>
 	<link rel="stylesheet" href="sheetstyle.css" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -65,24 +65,24 @@
 
 
                 <div class="w3-row">
-                    <h3 class="w3-half">Produits :</h3>
+                    <h3 class="w3-half" style="margin-top: 0;">Produits :</h3>
                     <div class="w3-half w3-right-align">
                         <button class="w3-button bleu-madera">Ajouter un produit</button>
                     </div>
                 </div>
 
-                <button onclick="Accordion('produit1')" class="w3-btn w3-block w3-gray">
+                <button onclick="Accordion('produit1')" class="w3-btn w3-block w3-gray w3-border w3-border-dark-grey">
                     Premium / ZENTRAL
                 </button>
-                <div id="produit1" class="w3-hide w3-padding w3-border w3-border-gray">
+                <div id="produit1" class="w3-hide w3-padding w3-border w3-border-dark-grey">
                     <p>Type de remplissage</p>
                     <p>Finition extérieur</p>
                     <p>Finition intérieur</p>
                 </div>
-                <button onclick="Accordion('produit2')" class="w3-btn w3-block w3-gray">
+                <button onclick="Accordion('produit2')" class="w3-btn w3-block w3-gray w3-border w3-border-dark-grey">
                     Economique / SUBRT
                 </button>
-                <div id="produit2" class="w3-hide w3-padding w3-border w3-border-gray">
+                <div id="produit2" class="w3-hide w3-padding w3-border w3-border-dark-grey">
                     <p>Type d'économie</p>
                     <p>Economie extérieur</p>
                     <p>Economie intérieur</p>
@@ -93,8 +93,8 @@
 
 
                 <div class="w3-row">
-                    <h3 class="w3-half">Module :</h3>
-                    <div class="w3-half w3-right-align">
+                    <h3 class="w3-half" style="margin-top: 0;">Module :</h3>
+                    <div class="w3-half w3-right-align w3-margin-bottom">
                         <button class="w3-button bleu-madera">Ajouter un module</button>
                     </div>
                 </div>
@@ -107,12 +107,8 @@
 	<script>
 		function Accordion(id) {
 		    var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
+            if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; }
+            else { x.className = x.className.replace(" w3-show", ""); }}
 	</script>
 
 </body>
