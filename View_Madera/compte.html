@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Compte</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="sheetstyle.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3css.css">
 </head>
 <body>
     <div class="w3-top">
@@ -13,7 +14,7 @@
                 <button class="w3-button">James</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
                     <a href="#" class="w3-bar-item w3-button">Compte</a>
-                    <a href="#" class="w3-bar-item w3-button">Déconnexion</a>
+                    <a href="#" class="w3-bar-item w3-button">DÃ©connexion</a>
                 </div>
             </div>
         </div>
@@ -21,21 +22,17 @@
     <div style="margin-top: 51px;">
 
         <div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:15%;">
-            <div class="w3-dropdown-hover">
-                <button class="w3-button w3-dark-grey">Projets</button>
-                <div class="w3-dropdown-content w3-bar-block">
-                    <a href="#" class="w3-bar-item w3-button">Liste des projets</a>
-                    <a href="#" class="w3-bar-item w3-button">Crée un projet</a>
-                </div>
+            <button onclick="Accordion('Projets_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Projets</button>
+            <div id="Projets_Side_Bar" class="w3-hide w3-light-grey">
+                <a href="#" class="w3-bar-item w3-button">Liste des projets</a>
+                <a href="#" class="w3-bar-item w3-button">CrÃ©e un projet</a>
             </div>
-            <div class="w3-dropdown-hover">
-                <button class="w3-button w3-dark-grey">Client</button>
-                <div class="w3-dropdown-content w3-bar-block">
-                    <a href="#" class="w3-bar-item w3-button">Liste des client</a>
-                    <a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
-                </div>
+            <button onclick="Accordion('Client_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Client</button>
+            <div id="Client_Side_Bar" class="w3-hide w3-light-grey">
+                <a href="#" class="w3-bar-item w3-button">Liste des client</a>
+                <a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
             </div>
-        </div>
+		</div>
 
         <div class="w3-padding over" style="margin-left:15%; overflow: auto;">
 
@@ -51,7 +48,7 @@
 
                     <div class="w3-threequarter">
                         <h2>#Nom</h2>
-                        <h2>#Prénom</h2>
+                        <h2>#PrÃ©nom</h2>
                     </div>
                 </div>
 

@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>$nom du projet</title>
+    <meta charset="UTF-8">
 	<link rel="stylesheet" href="sheetstyle.css" />
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="w3css.css">
 </head>
 <body>
 	<div class="w3-top">
@@ -13,28 +14,24 @@
 				<button class="w3-button">James</button>
 				<div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
 					<a href="#" class="w3-bar-item w3-button">Compte</a>
-					<a href="#" class="w3-bar-item w3-button">Déconnexion</a>
+					<a href="#" class="w3-bar-item w3-button">DÃ©connexion</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div style="margin-top: 51px;">
 
-		<div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:15%;">
-			<div class="w3-dropdown-hover">
-				<button class="w3-button w3-dark-grey">Projets</button>
-				<div class="w3-dropdown-content w3-bar-block">
-					<a href="#" class="w3-bar-item w3-button">Liste des projets</a>
-					<a href="#" class="w3-bar-item w3-button">Crée un projet</a>
-				</div>
-			</div>
-			<div class="w3-dropdown-hover">
-				<button class="w3-button w3-dark-grey">Client</button>
-				<div class="w3-dropdown-content w3-bar-block">
-					<a href="#" class="w3-bar-item w3-button">Liste des client</a>
-					<a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
-				</div>
-			</div>
+        <div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:15%;">
+            <button onclick="Accordion('Projets_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Projets</button>
+            <div id="Projets_Side_Bar" class="w3-hide w3-light-grey">
+                <a href="#" class="w3-bar-item w3-button">Liste des projets</a>
+                <a href="#" class="w3-bar-item w3-button">CrÃ©e un projet</a>
+            </div>
+            <button onclick="Accordion('Client_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Client</button>
+            <div id="Client_Side_Bar" class="w3-hide w3-light-grey">
+                <a href="#" class="w3-bar-item w3-button">Liste des client</a>
+                <a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
+            </div>
 		</div>
 
 		<div class="w3-padding over" style="margin-left:15%; overflow: auto;">
@@ -44,7 +41,7 @@
                 <div class="w3-row">
                     <h3 class="w3-col s2">$nom du projet</h3>
                     <p class="w3-col s2 w3-opacity">ref : $reference</p>
-                    <p class="w3-twothird w3-right-align">Projet démarré le : $date</p>
+                    <p class="w3-twothird w3-right-align">Projet dÃ©marrÃ© le : $date</p>
                 </div>
 
                 <div class="w3-row">
@@ -76,16 +73,16 @@
                 </button>
                 <div id="produit1" class="w3-hide w3-padding w3-border w3-border-dark-grey">
                     <p>Type de remplissage</p>
-                    <p>Finition extérieur</p>
-                    <p>Finition intérieur</p>
+                    <p>Finition extÃ©rieur</p>
+                    <p>Finition intÃ©rieur</p>
                 </div>
                 <button onclick="Accordion('produit2')" class="w3-btn w3-block w3-gray w3-border w3-border-dark-grey">
                     Economique / SUBRT
                 </button>
                 <div id="produit2" class="w3-hide w3-padding w3-border w3-border-dark-grey">
-                    <p>Type d'économie</p>
-                    <p>Economie extérieur</p>
-                    <p>Economie intérieur</p>
+                    <p>Type d'Ã©conomie</p>
+                    <p>Economie extÃ©rieur</p>
+                    <p>Economie intÃ©rieur</p>
                 </div>
 
 
