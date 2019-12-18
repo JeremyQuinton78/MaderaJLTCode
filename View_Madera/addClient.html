@@ -3,18 +3,20 @@
 <head>
     <title>Ajouter un client</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="sheetstyle.css" />
-    <link rel="stylesheet" href="w3css.css">
+    <link rel="stylesheet" href="stylesheets/stylesheet_global.css" />
+    <link rel="stylesheet" href="stylesheets/w3css.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="w3-top">
         <div class="w3-bar w3-xlarge bleu-madera">
-            <a href="#" class="w3-bar-item w3-button" onclick="">MADERA</a>
+            <a href="./home.html" class="w3-bar-item w3-button" onclick="">MADERA</a>
             <div class="w3-dropdown-hover w3-right">
-                <button class="w3-button">James</button>
+                <button class="w3-button">$comm_prenom $comm_nom</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
-                    <a href="#" class="w3-bar-item w3-button">Compte</a>
-                    <a href="#" class="w3-bar-item w3-button">Déconnexion</a>
+                    <a href="./compte.html" class="w3-bar-item w3-button w3-medium">Compte</a>
+                    <a href="#" class="w3-bar-item w3-button w3-medium">Déconnexion</a>
                 </div>
             </div>
         </div>
@@ -22,12 +24,12 @@
     <div style="margin-top: 51px;">
             
         <div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:15%;">
-            <button onclick="Accordion('Projets_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Projets</button>
+            <button onclick="Accordion('Projets_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Projets <i class="fa fa-caret-down"></i></button>
             <div id="Projets_Side_Bar" class="w3-hide w3-light-grey">
                 <a href="#" class="w3-bar-item w3-button">Liste des projets</a>
                 <a href="#" class="w3-bar-item w3-button">Crée un projet</a>
             </div>
-            <button onclick="Accordion('Client_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Client</button>
+            <button onclick="Accordion('Client_Side_Bar')" class="w3-button w3-bar-item w3-dark-grey">Client <i class="fa fa-caret-down"></i></button>
             <div id="Client_Side_Bar" class="w3-hide w3-light-grey">
                 <a href="#" class="w3-bar-item w3-button">Liste des client</a>
                 <a href="#" class="w3-bar-item w3-button">Ajouter un client</a>
@@ -46,10 +48,10 @@
                 <input class="w3-input w3-border" name="prenom" type="text"></p>
 
                 <p><label>Téléphone :</label>
-                <input class="w3-input w3-border" name="telephone" type="text"></p>
+                <input class="w3-input w3-border" name="telephone" type="tel"></p>
                     
                 <p><label>Adresse mail :</label>
-                <input class="w3-input w3-border" name="mail" type="text"></p>
+                <input class="w3-input w3-border" name="mail" type="mail"></p>
 
                 <p><label>Ville :</label>
                 <input class="w3-input w3-border" name="ville" type="text"></p>
